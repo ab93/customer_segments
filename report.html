@@ -6759,7 +6759,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>  Yes there were about 3 data points which were considered outliers for more than one feature. Since these points are very few, these points should be removed from the dataset. Index 65 has outliers for Fresh and Frozen. Indices 66 and 128 have outliers for Fresh and Delicatessen.</p>
+<p><strong>Answer:</strong>  Yes there were 5 data points which were considered outliers for more than one feature. Since these points are very few, these points should be removed from the dataset. Index 65 has outliers for Fresh and Frozen. Indices 66 and 128 have outliers for Fresh and Delicatessen. Index 75 is present for both Grocery and Detergents_Paper. Index 154 is there for both Grocery and Delicatessen.</p>
+<p>Generally, it is better to remove the outliers from the data, since it makes the data more homogenous. PCA and the clustering algorithms can behave in a more robust manner if the outliers are not present. However, removing the outliers can sometimes disrupt the underlying structure of the data too. Therefore, number of outliers removed should be considerably less in my opinion.</p>
 
 </div>
 </div>
